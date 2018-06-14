@@ -29,8 +29,9 @@ $(startButton).click(function(){
 
     $("#head").addClass("hide");
     $(".btn").addClass("hide");
-    clearInterval(timeStart);
+    $(".container").removeClass("hide");
 
+    clearInterval(timeStart);
     timeStart = setInterval(countdown, 1000);
 
     function countdown(){
@@ -38,10 +39,12 @@ $(startButton).click(function(){
         $("#timer").html("<h2>Time Remaining: "+count+"</h2>");
 
         if(count <= 0){
+            stop();
             alert("Time up");
         }
     }
 
+    
     
     
 });
