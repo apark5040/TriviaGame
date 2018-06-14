@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+#app {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    text-align: center;
+}
+
+#questions {
+    padding: 15px;
+}
+
+input {
+    margin: 15px;
+}
+
+form {
+    margin-left: 300px;
+}
+
+.questionAnswer {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
