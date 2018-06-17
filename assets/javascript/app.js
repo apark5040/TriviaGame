@@ -92,10 +92,10 @@ function questionRow(qNum,question, one, two, three, four, five){
 }
 
 questionRow("1","Q1: What is the capital of Georgia?", "*Atlanta", "San Francisco", "Dallas", "Chicago", "Phoenix");
-questionRow("2","Q2: Which of the following is the highest grossing Disney movie?", "Toy Story 3", "Finding Nemo", "*Frozen", "Lion King", "Zootopia");
+questionRow("2","Q2: Which of the following is the highest grossing animated movie?", "Toy Story 3", "Finding Nemo", "*Frozen", "Lion King", "Zootopia");
 questionRow("3","Q3: Which state has the highest percentage of people who walk to work?", "New York", "Washington", "Nevada", "*Alaska", "Texas");
 questionRow("4","Q4: There are one trillion germs that live on what?", "*Human Foot", "Toilet", "Garbage Can", "Fingernails", "Saliva");
-questionRow("5","Q5: Most Jell-o contains what?", "Bonemeal", "*Crushed Hooves", "Fruit", "Cane Sugar", "Bits of gummi bears");
+questionRow("5","Q5: Most Jell-o contains what?", "MSG", "*Crushed Hooves", "Fruit", "Cane Sugar", "Bits of gummi bears");
 
 //I had to make a click function for each question. There has to be an easier way to do this. I tried making one click function for all form tags that had the id "set"
 //but that didn't work.
@@ -189,9 +189,9 @@ $(startButton).click(function(){
 
             wrong = 5 - right;
 
-            $(".questionsBox").addClass("hide");
-            $("#last").html("<p>Right Answers: " + right + "</p>" + 
-                            "<p>Wrong Answers: " + wrong + "</p>");
+            $(".questionBox").addClass("hide");
+            $("#last").html("<p class='col-md-12'>Right Answers: " + right + "</p>" + 
+                            "<p class='col-md-12'>Wrong Answers: " + wrong + "</p>");
 
             stop();
             clearInterval(timeStart);
