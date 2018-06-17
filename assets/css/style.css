@@ -4,6 +4,7 @@ h1 {
 
 #app {
     text-align: center;
+    margin-top: 25px;
 }
 
 .hide {
@@ -31,3 +32,12 @@ form {
     font-size: 30px;
 }
 
+#last {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+body {
+    background-image: url("assets/images/Questionmark.jpg");
+}
