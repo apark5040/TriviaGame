@@ -9,16 +9,18 @@ var isChecked1, isChecked2, isChecked3, isChecked4, isChecked5;
 
 var headMessage = $("<p>");
 headMessage.attr("id", "head");
+headMessage.addClass("col-md-12");
 $("#app").append(headMessage);
 $("#head").text("Press the start button to begin");
 
 var startButton = $("<button>");
-startButton.addClass("btn btn-primary btn-lg btn-start");
+startButton.addClass("btn btn-primary btn-lg btn-start col-md-12");
 startButton.attr("type", "button");
 startButton.text("Start");
 
 var timerHead = $("<div>");
 timerHead.attr("id","timer");
+timerHead.addClass("col-md-12");
 $("#app").append(timerHead);
 $("#timer").html("<h2>Time Remaining: "+count+"</h2>");
 
@@ -38,7 +40,7 @@ function questionRow(qNum,question, one, two, three, four, five){
     row2.text(question);
     formButtons.attr("id", "set"+qNum);
 
-    $(".container").append(row1);
+    $(".questionBox").append(row1);
     $("#question").append(row2);
     $("#question").append(formButtons);
 
@@ -157,7 +159,7 @@ $(startButton).click(function(){
 
     $("#head").addClass("hide");
     $(".btn-start").addClass("hide");
-    $(".container").removeClass("hide");
+    $(".questionBox").removeClass("hide");
 
     clearInterval(timeStart);
     timeStart = setInterval(countdown, 1000);
@@ -187,7 +189,7 @@ $(startButton).click(function(){
 
             wrong = 5 - right;
 
-            $(".container").addClass("hide");
+            $(".questionsBox").addClass("hide");
             $("#last").html("<p>Right Answers: " + right + "</p>" + 
                             "<p>Wrong Answers: " + wrong + "</p>");
 

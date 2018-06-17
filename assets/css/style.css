@@ -1,5 +1,8 @@
 h1 {
     text-align: center;
+    font-size: 60px;
+    font-family: 'Shrikhand', cursive;
+
 }
 
 #app {
@@ -38,6 +41,6 @@ form {
     margin-top: 50px;
 }
 
-body {
-    background-image: url("assets/images/Questionmark.jpg");
+div{
+    background-color: grey;
 }
